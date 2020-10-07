@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>九九乘法表</title>
+
+</head>
+<script>
+	function jj(){
+    // 打印9*9乘法表
+	    document.write("<h1 align='center'>九九乘法表一</h1>")
+	    
+	    document.write("<table border='1' align='center'>")
+	    
+		    for(var i=1; i<=9; i++){
+		    	
+			document.write("<tr>");
+			
+			for(var j=1; j<=i; j++){
+				
+				document.write("<td>" + i + "x" + j + "=" + i*j + "</td>");
+			}
+			document.write("</tr>");
+                }
+			document.write("</table><br/>");
+
+          }
+	
+	function kk(){
+    // 打印9*9乘法表
+	    document.write("<h1 align='center'>九九乘法表二</h1>")
+	    
+	    document.write("<table border='1' align='center'>")
+		  for(var i=9; i>=1; i--){
+		  	
+			document.write("<tr>");
+			
+			for(var j=1; j<=i; j++){
+				
+				document.write("<td>" + i + "x" + j + "=" + i*j + "</td>");
+			}
+			document.write("</tr>");
+		}
+		document.write("</table><br/>");
+		
+		   }
+	function ll(){
+    // 打印9*9乘法表
+	    document.write("<h1 align='center'>九九乘法表三</h1>")
+	    
+	    document.write("<table border='1' align='center'>")
+		  for(var i=1; i<=9; i++){
+		  	
+			document.write("<tr>");
+			
+			for(var k=1; k<=9 -i;k++){
+				document.write("<td>");
+				document.write("</td>");
+			}
+			for(var j=i; j>=1; j--){
+				document.write("<td>" + i + "x" + j + "=" + i*j + "</td>");
+			}
+			document.write("</tr>");
+		}
+		document.write("</table><br/>");
+		
+		   }
+			
+	function yy(){
+    // 打印9*9乘法表
+	    document.write("<h1 align='center'>九九乘法表四</h1>")
+	    document.write("<table border='1' align='center'>")
+		  for(var i=9; i>=1; i--){
+		  	
+			document.write("<tr>");
+			
+			for(var k=1; k<=9 -i;k++){
+				document.write("<td>");
+				document.write("</td>");
+			}
+			for(var j=i; j>=1; j--){
+				document.write("<td>" + i + "x" + j + "=" + i*j + "</td>");
+			}
+			document.write("</tr>");
+		}
+		document.write("</table><br/>");
+		
+		   }
+</script>
+<body>
+	
+<button onclick="jj()">表1</button>
+<button onclick="kk()">表2</button>
+<button onclick="ll()">表3</button>
+<button onclick="yy()">表4</button>
+
+</body>
+</html>
